@@ -5,6 +5,9 @@ desc: On Sunday, February 25, 2013, the White House released documents detailing
 permalink: /post/example-state-sequester.html
 shortdesc: On Sunday, February 25, 2013, the White House released documents detailing the projected costs to states of the upcoming sequester.
 ---
+
+Major Links
+
 I wanted to test some ideas brewing around.
 
 1. data as part of the web ecology and
