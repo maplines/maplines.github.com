@@ -6,7 +6,7 @@ permalink: /post/north_arkansas.html
 shortdesc: links to feeder maps
 ---
 
-Central Virginia Electric Coop
+North Arkansas Electric Coop
 ----------------------
 
 ME Substation
