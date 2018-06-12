@@ -11,21 +11,18 @@
             {{ content }}
         </div>     
     </div>
-    <div class="row-fluid">
-        <div class="span9">
-            <script>
-                mapboxgl.accessToken = 'pk.eyJ1IjoiZmVvbWlrZSIsImEiOiJNRjJrRmRnIn0.Sc8mxXKYTRfgegc_3vjZiw';
-                var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/feomike/cj0zcunxh000m2sqb2epkabb4',
-                    zoom: 12,
-                    center: [-97.35,35.12]  
-                });
-            </script>
-        </div>
-    </div>
 </div>
- 
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZmVvbWlrZSIsImEiOiJNRjJrRmRnIn0.Sc8mxXKYTRfgegc_3vjZiw';
+var map = new mapboxgl.Map({
+    //container: 'map',
+    style: 'mapbox://styles/feomike/cj0zcunxh000m2sqb2epkabb4',
+    zoom: 12,
+    center: [-97.35,35.12]  
+});
+</script>
 
 
 {% include footer.html %}
