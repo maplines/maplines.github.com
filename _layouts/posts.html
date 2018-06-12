@@ -5,23 +5,7 @@
         <div class="span9">
             <h2>{{ page.title }}</h2>
             {{ content }}
-        </div>
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
-        <style>
-            body { margin:0; padding:0; }
-            #map { position:absolute; top:0; bottom:0; width:100%; }
-        </style>
-        <div id='map'></div>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiZmVvbWlrZSIsImEiOiJNRjJrRmRnIn0.Sc8mxXKYTRfgegc_3vjZiw';
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/feomike/cj0zcunxh000m2sqb2epkabb4',
-                    zoom: 12,
-                    center: [-97.35,35.12]  
-                });
-        </script>       
+        </div>     
         <div class="span3">
             {% include right.html %}
         </div>
