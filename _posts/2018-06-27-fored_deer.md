@@ -5,6 +5,9 @@ desc: Click here to see the links for maps relating to the Forked Deer Coop.  Th
 permalink: /post/forked_deer.html
 shortdesc: links to feeder maps
 ---
+Curve Substation
+--------------
+* Feeder 01-234 - [map](/coop/forked_deer/scurve_f01234.html)
 
 Mill Creek Substation
 --------------
