@@ -8,6 +8,6 @@ shortdesc: links to feeder maps
 
 Mill Creek Substation
 --------------
+* Feeder 07-324 - [map](/coop/forked_deer/smill_creek_f07324.html)
 * Feeder 07-334 - [map](/coop/forked_deer/smill_creek_f07334.html)
-
-
+* Feeder 07-344 - [map](/coop/forked_deer/smill_creek_f07344.html)
