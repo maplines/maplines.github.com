@@ -8,6 +8,7 @@ shortdesc: links to feeder maps
 Curve Substation
 --------------
 * Feeder 01-234 - [map](/coop/forked_deer/scurve_f01234.html)
+* Feeder 01-244 - [map](/coop/forked_deer/scurve_f01244.html)
 
 Mill Creek Substation
 --------------
