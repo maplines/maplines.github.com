@@ -15,3 +15,8 @@ Mill Creek Substation
 * Feeder 07-324 - [map](/coop/forked_deer/smill_creek_f07324.html)
 * Feeder 07-334 - [map](/coop/forked_deer/smill_creek_f07334.html)
 * Feeder 07-344 - [map](/coop/forked_deer/smill_creek_f07344.html)
+
+Nauvoo Substation
+--------------
+* Feeder 08-214 - [map](/coop/forked_deer/snauvoo_f08214.html)
+* Feeder 08-234 - [map](/coop/forked_deer/snauvoo_f08234.html)
