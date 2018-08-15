@@ -8,8 +8,8 @@ shortdesc: links to feeder maps
 
 Kilgore Substation
 --------------
-* Feeder 2-1 - [map](/coop/naec/skilgore_f2_1.html)
-* Feeder 2-2 - [map](/coop/naec/skilgore_f2_2.html)
-* Feeder 2-5 - [map](/coop/naec/skilgore_f2_5.html)
+* Feeder 2-1 - [map](/coop/arc_valley/skilgore_f2_1.html)
+* Feeder 2-2 - [map](/coop/arc_valley/skilgore_f2_2.html)
+* Feeder 2-5 - [map](/coop/arc_valley/skilgore_f2_5.html)
 
 
