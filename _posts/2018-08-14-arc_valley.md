@@ -12,4 +12,9 @@ Kilgore Substation
 * Feeder 2-2 - [map](/coop/arc_valley/skilgore_f2_2.html)
 * Feeder 2-5 - [map](/coop/arc_valley/skilgore_f2_5.html)
 
+Roland Substation
+--------------
+* Feeder 1-1 - [map](/coop/arc_valley/sroland_f1_1.html)
+* Feeder 1-2 - [map](/coop/arc_valley/sroland_f1_2.html)
+* Feeder 1-5 - [map](/coop/arc_valley/sroland_f1_5.html)
 
