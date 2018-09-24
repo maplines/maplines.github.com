@@ -16,6 +16,10 @@ Crown Lake Substation
 -------------------
 * Feeder 16-1 - [map](/coop/naec/scrown_lake_f16-1.html)
 
+Lakeview Substation
+-------------------
+* Feeder 11-7 - [map](/coop/naec/slakeview_f11-7.html)
+
 ME Substation
 --------------
 * Feeder 2-1 - [map](/coop/naec/sme_f2_1.html)
