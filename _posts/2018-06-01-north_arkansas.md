@@ -15,7 +15,7 @@ Crown Lake Substation
 -------------------
 * Feeder 16-1 - [map](/coop/naec/scrown_lake_f16-1.html)
 
-Ash Flat Substation
+Henderson Substation
 -------------------
 * Feeder 15-5 - [map](/coop/naec/shenderson_f15-5.html)
 * Feeder 15-7 - [map](/coop/naec/shenderson_f15-7.html)
@@ -30,6 +30,7 @@ Lakeview Substation
 Mallard Substation
 --------------
 * Feeder 2-1 - [map](/coop/naec/sme_f2_1.html)
+* Feeder 2-2 - [map](/coop/naec/smallard_f2-2.html)
 * Feeder 2-8 - [map](/coop/naec/smallard_f2-8.html)
 * Feeder 2-9 - [map](/coop/naec/smn_f2_9.html)
 
