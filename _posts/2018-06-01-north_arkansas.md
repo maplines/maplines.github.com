@@ -17,8 +17,8 @@ Crown Lake Substation
 
 Henderson Substation
 -------------------
+* Feeder 15-3 - [map](/coop/naec/shenderson_f15-3.html)
 * Feeder 15-5 - [map](/coop/naec/shenderson_f15-5.html)
-* Feeder 15-7 - [map](/coop/naec/shenderson_f15-7.html)
 
 Lakeview Substation
 -------------------
