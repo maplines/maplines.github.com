@@ -30,7 +30,7 @@ Lakeview Substation
 Mallard Substation
 --------------
 * Feeder 2-1 - [map](/coop/naec/sme_f2_1.html)
-* Feeder 2-8 - [map](/coop/naec/smallard_f2_8.html)
+* Feeder 2-8 - [map](/coop/naec/smallard_f2-8.html)
 * Feeder 2-9 - [map](/coop/naec/smn_f2_9.html)
 
 Salem Substation
