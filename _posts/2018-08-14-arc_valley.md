@@ -6,6 +6,14 @@ permalink: /post/arc_valley.html
 shortdesc: links to feeder maps
 ---
 
+Highway 59 Substation
+--------------
+* Feeder 4-1 - [map](/coop/arc_valley/shwy_59_f4_1.html)
+* Feeder 4-2 - [map](/coop/arc_valley/shwy_59_f4_2.html)
+* Feeder 4-3 - [map](/coop/arc_valley/shwy_59_f4_3.html)
+* Feeder 4-4 - [map](/coop/arc_valley/shwy_59_f4_4.html)
+* Feeder 4-5 - [map](/coop/arc_valley/shwy_59_f4_5.html)
+
 Kilgore Substation
 --------------
 * Feeder 2-1 - [map](/coop/arc_valley/skilgore_f2_1.html)
