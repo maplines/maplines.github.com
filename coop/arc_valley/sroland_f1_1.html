@@ -23,20 +23,24 @@ var map = new mapboxgl.Map({
     center: [-94.47,35.44]  
 });
 
-var cable_url = 'mapbox://feomike.3zme2rwf' 
-var cable_source_layer = 'mb_s1_f1_cable-62fq8w' 
 
-var consumers_url = 'mapbox://feomike.6oo8bvxk'
-var consumers_source_layer = 'mb_s1_f1_consumers-adadux'
+var ml_substat = '1'
+var ml_feeder = '1'
 
-var splice_can_url = 'mapbox://feomike.7sl4qtk8'
-var splice_can_source_layer = 'mb_s1_f1_splice_can-d1fis4'
+var cable_url = 'mapbox://feomike.5ca0uksu' 
+var cable_source_layer = 'arc_valley_cable-bxmqs9'
 
-var substat_url = 'mapbox://feomike.4kgdqu1h'
-var substat_source_layer = 'mb_s1_f1_substations-859i1x'  
+var consumers_url = 'mapbox://feomike.4wrdc91x'
+var consumers_source_layer = 'arc_valley_consumers-8wugak'
 
-var tap_url = 'mapbox://feomike.6zyduyzg' 
-var tap_source_layer = 'mb_s1_f1_tap_geo-88lh8g' 
+var splice_can_url = 'mapbox://feomike.8xv4qhna'
+var splice_can_source_layer = 'arc_valley_splice_can-8slkjs' 
+
+var substat_url = 'mapbox://feomike.022k01d6'
+var substat_source_layer = 'arc_valley_substations-bqhw4f'  
+
+var tap_url = 'mapbox://feomike.5jf74ksl' 
+var tap_source_layer = 'arc_valley_tap_geo-bs1oit' 
 
 var myBlue = '#0000FF'
 var myOrange = '#FFA500'
@@ -70,7 +74,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
-         'filter': ['==', 'CABLE', 96],
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'CABLE', 96]],
          'layout':{'line-join':'round','line-cap':'round'},
          'paint': {
               'line-width': {
@@ -94,7 +98,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
-         'filter': ['==', 'CABLE', 48],
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'CABLE', 48]],
          'paint': {
               'line-width': {
                 base: 1,
@@ -117,7 +121,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
-         'filter': ['==', 'CABLE', 24],
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'CABLE', 24]],
          'paint': {
               'line-width': {
                 base: 1,
@@ -140,7 +144,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
-         'filter': ['==', 'CABLE', 12],
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'CABLE', 12]],
          'paint': {
               'line-width': {
                 base: 1,
@@ -163,7 +167,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
-         'filter': ['==', 'CABLE', 4],
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'CABLE', 4]],
          'paint': {
               'line-width': {
                 base: 1,
@@ -186,6 +190,7 @@ map.on('load', function () {
              url: cable_url
             },
          'source-layer': cable_source_layer,
+         filter: ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
          'paint': {
               'line-width': 1,
               'line-color': 
@@ -212,6 +217,7 @@ map.on('load', function () {
             url: consumers_url
             },
         'source-layer': consumers_source_layer,
+        filter: ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'layout': {
             'visibility': 'visible',
             'icon-image': 'orange-circle-11',
@@ -234,6 +240,7 @@ map.on('load', function () {
             url: consumers_url
             },
         'source-layer': consumers_source_layer,
+        filter: ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'paint': {'text-color': myOrange
             }, 
         'layout': {
@@ -263,6 +270,7 @@ map.on('load', function () {
             url: splice_can_url
             },
         'source-layer': splice_can_source_layer ,
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'layout': {
             'visibility': 'visible',
             'icon-image': 'blue-bowtie-15',
@@ -287,7 +295,7 @@ map.on('load', function () {
              url: tap_url
          },
          'source-layer': tap_source_layer,
-         'filter': ['==', 'PORT', 2], 
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 2]], 
          'layout': {'visibility': 'visible'},
          'paint': {
              'circle-radius': {
@@ -329,7 +337,7 @@ map.on('load', function () {
              url: tap_url
          },
          'source-layer': tap_source_layer,
-         'filter': ['==', 'PORT', 2], 
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 2]], 
          'layout': {'visibility': 'visible'},
          'paint': {
              'circle-radius': {
@@ -370,7 +378,7 @@ map.on('load', function () {
              url: tap_url
          },
          'source-layer': tap_source_layer,
-         'filter': ['==', 'PORT', 4], 
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 4]], 
          'layout': {
             'visibility': 'visible',
             'icon-image': '{TUBE}-square-15',
@@ -395,7 +403,7 @@ map.on('load', function () {
             url: tap_url
             },
         'source-layer': tap_source_layer,
-        'filter': ['==', 'PORT', 4], 
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 4]], 
         'layout': {
             'visibility': 'visible',
             'icon-image': '{STRAND}-circle-11',
@@ -420,7 +428,7 @@ map.on('load', function () {
              url: tap_url
          },
          'source-layer': tap_source_layer,
-         'filter': ['==', 'PORT', 8], 
+         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 8]], 
          'layout': {
             'visibility': 'visible',
             'icon-image': '{TUBE}-octagon-15',
@@ -444,7 +452,7 @@ map.on('load', function () {
             url: tap_url
             },
         'source-layer': tap_source_layer,
-        'filter': ['==', 'PORT', 8], 
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['==', 'PORT', 8]], 
         'layout': {
             'visibility': 'visible',
             'icon-image': '{STRAND}-circle-11',
@@ -468,6 +476,7 @@ map.on('load', function () {
             url: tap_url
             },
         'source-layer': tap_source_layer,
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'paint': {
             'text-color': tapColor
             },
@@ -495,6 +504,7 @@ map.on('load', function () {
             url: tap_url
             },
         'source-layer': tap_source_layer,
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'paint': {
             'text-color': seqColor
             },
@@ -522,7 +532,7 @@ map.on('load', function () {
             url: cable_url
             },
         'source-layer': cable_source_layer,
-        'filter': ['in', 'STYPE', '1','2'],
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['in', 'STYPE', '1','2']],
         'paint': {
             'text-color': spanAerial
             },
@@ -549,7 +559,7 @@ map.on('load', function () {
             url: cable_url
             },
         'source-layer': cable_source_layer,
-        'filter': ['in', 'STYPE', '3','4'],
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder],['in', 'STYPE', '3','4']],
         'paint': {
             'text-color': spanUnder
             },
@@ -577,6 +587,7 @@ map.on('load', function () {
             url: cable_url
             },
         'source-layer': cable_source_layer,
+        'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
         'paint': {
             'text-color': strandTextColor
             },
@@ -603,6 +614,7 @@ map.on('load', function () {
             url: substat_url
             },
         'source-layer': substat_source_layer,
+        'filter': ['==', 'ML_SUBSTAT', ml_substat],
         'layout': {
             'visibility': 'visible',
             'icon-image': 'black-square-15',
