@@ -39,6 +39,12 @@ Salem Substation
 * Feeder 5-1 - [map](/coop/naec/ssalem_f5-1.html)
 * Feeder 5-4 - [map](/coop/naec/ssalem_f5-4.html)
 
+Sycamore Springs Substation
+----------------
+* Feeder 17-1 - [map](/coop/naec/ssyc_sprs_f17-1.html)
+* Feeder 17-2 - [map](/coop/naec/ssyc_sprs_f17-2.html)
+* Feeder 17-3 - [map](/coop/naec/ssyc_sprs_f17-3.html)
+
 Tracy Substation
 ----------------
 * Feeder 13-4 - [map](/coop/naec/stracy_f13-4.html)
