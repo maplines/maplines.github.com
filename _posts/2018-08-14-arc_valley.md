@@ -26,3 +26,10 @@ Roland Substation
 * Feeder 1-2 - [map](/coop/arc_valley/sroland_f1_2.html)
 * Feeder 1-3 - [map](/coop/arc_valley/sroland_f1_3.html)
 
+Van Buren Substation
+-------------
+* Feeder 3-1 - [map](/coop/arc_valley/svan_buren_f3_1.html)
+* Feeder 3-2 - [map](/coop/arc_valley/svan_buren_f3_2.html)
+* Feeder 3-3 - [map](/coop/arc_valley/svan_buren_f3_3.html)
+* Feeder 3-4 - [map](/coop/arc_valley/svan_buren_f3_4.html)
+* Feeder 3-7 - [map](/coop/arc_valley/svan_buren_f3_7.html)
