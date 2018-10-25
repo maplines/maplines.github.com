@@ -9,7 +9,7 @@ shortdesc: links to feeder maps
 Ash Flat Substation
 -------------------
 * Feeder 6-1 - [map](/coop/naec/sash_flat_f6-1.html)
-* Feeder 6-3 - [map](/coop/naec/sash_flat_f634.html)
+* Feeder 6-3 - [map](/coop/naec/sash_flat_f6-3.html)
 * Feeder 6-4 - [map](/coop/naec/sash_flat_f6-4.html)
 
 Crown Lake Substation
