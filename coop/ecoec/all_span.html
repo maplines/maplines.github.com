@@ -32,6 +32,7 @@ var cable_source_layer_1 = 'ml_span_1-8mm4bm'
 var cable_url_2 = 'mapbox://feomike.dnb93cgy' 
 var cable_source_layer_2 = 'ml_span_2-6vd0rj'  
 
+
 var spanAerial = '#551a8b' //purple
 var spanUnder = '#FFA500'
 
@@ -46,7 +47,7 @@ map.on('load', function () {
             type: 'vector', 
             url: cable_url_0},
         'source-layer': cable_source_layer_0,
-        //filter: ["all",['==', 'ml_substat', '04']],
+        // filter: ["all",['==', 'ml_substat', '04']],
         'paint': {
             'line-width': 1,
             'line-color': {
