@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZmVvbWlrZSIsImEiOiJNRjJrRmRnIn0.Sc8mxXKYTRfgegc_3vjZiw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/feomike/cj0zcunxh000m2sqb2epkabb4',
+    zoom: 9,
+    center: [-95.8,35.6]
+});
+
+var cable_url_0 = 'mapbox://feomike.5zgb89ak' 
+var cable_source_layer_0 = 'ml_span_0-9akooq' 
+
+var cable_url_1 = 'mapbox://feomike.2pa191a9' 
+var cable_source_layer_1 = 'ml_span_1-8mm4bm' 
+ 
+var cable_url_2 = 'mapbox://feomike.dnb93cgy' 
+var cable_source_layer_2 = 'ml_span_2-6vd0rj'  
+
+var spanAerial = '#551a8b' //purple
+var spanUnder = '#FFA500'
+
+
+//remember shapefile fields need to be upper case for mapbox to recognize them
+//cable
+map.on('load', function () {
+     map.addLayer({//CABLE
+        'id': 'cable_0',
+        'type': 'line',
+         'source': {
+            type: 'vector', 
+            url: cable_url_0},
+        'source-layer': cable_source_layer_0,
+        //filter: ["all",['==', 'ml_substat', '04']],
+        'paint': {
+            'line-width': 1,
+            'line-color': {
+                property: 'stype',
+                type: 'categorical',
+                stops: [ ['1',spanAerial],
+                    ['2', spanAerial],
+                    ['3', spanUnder],
+                    ['4', spanUnder]] } }
+    }); 
+});
+
+//remember shapefile fields need to be upper case for mapbox to recognize them
+//cable
+map.on('load', function () {
+     map.addLayer({//CABLE
+        'id': 'cable_1',
+        'type': 'line',
+         'source': {
+            type: 'vector', 
+            url: cable_url_1},
+        'source-layer': cable_source_layer_1,
+        //filter: ["all",['==', 'ml_substat', '04']],
+        'paint': {
+            'line-width': 1,
+            'line-color': {
+                property: 'stype',
+                type: 'categorical',
+                stops: [ ['1',spanAerial],
+                    ['2', spanAerial],
+                    ['3', spanUnder],
+                    ['4', spanUnder]] } }
+    }); 
+});
+
+//remember shapefile fields need to be upper case for mapbox to recognize them
+//cable
+map.on('load', function () {
+     map.addLayer({//CABLE
+        'id': 'cable_2',
+        'type': 'line',
+         'source': {
+            type: 'vector', 
+            url: cable_url_2},
+        'source-layer': cable_source_layer_2,
+        //filter: ["all",['==', 'ml_substat', '04']],
+        'paint': {
+            'line-width': 1,
+            'line-color': {
+                property: 'stype',
+                type: 'categorical',
+                stops: [ ['1',spanAerial],
+                    ['2', spanAerial],
+                    ['3', spanUnder],
+                    ['4', spanUnder]] } }
+    }); 
+});
+
+// //consumers-outside ring
+// map.on('load', function () {
+//     map.addLayer({//CONSUMERS
+//         'id': 'consumers-rings',
+//         'type': 'circle',
+//         'source': {
+//             type: 'vector', 
+//             url: consumers_url},
+//         'source-layer': consumers_source_layer,
+//         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
+//         'layout': {'visibility': 'visible'},
+//         'paint': {
+//             'circle-radius': {
+//                 'base': .9,
+//                 'stops': [[12, 1], [13,4], [14,5], [15,6], [16,10] ]}, 
+//             'circle-color': myOrange}
+//     }); 
+// });
+
+// //consumers-inside ring
+// map.on('load', function () {
+//     map.addLayer({//CONSUMERS
+//         'id': 'consumers-inside',
+//         'type': 'circle',
+//         'source': {
+//             type: 'vector', 
+//             url: consumers_url},
+//         'source-layer': consumers_source_layer,
+//         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
+//         'layout': {'visibility': 'visible'},
+//         'paint': {
+//             'circle-radius': {
+//                 'base': .9,
+//                 'stops': [[12, 1], [13,3], [14,4], [15,5], [16,9] ]}, //, [22, 60]] }, 
+//             'circle-color': myWhite}
+//     }); 
+// });
+
+// //consumers-text - 'M'
+// map.on('load', function () {
+//      map.addLayer({//CONSUMERS
+//         'id': 'consumers-text',
+//         'type': 'symbol',
+//         'source': {
+//             type: 'vector', 
+//             url: consumers_url},
+//         'source-layer': consumers_source_layer,
+//         'filter': ["all",['==', 'ML_SUBSTAT', ml_substat],['==', 'ML_FEEDER', ml_feeder]],
+//         'paint': {
+//             'text-color': myOrange},
+//         'layout': {
+//             'text-field':'M', //
+//             'text-font': ["Open Sans Semibold", "Arial Unicode MS Bold"],
+//             'text-allow-overlap': true,
+//             'text-size': {
+//                 'base': 1, 
+//                 'stops': [[12, 5], [13,6], [14,8], [15,8], [16,12] ]}}
+//     }); 
+// });
+
+
+// //Substation - these are squares
+// map.on('load', function () {
+//     map.addLayer({//SUBSTATION
+//         'id': 'substation',
+//         'type': 'symbol',
+//         'source': {
+//             type: 'vector', 
+//             url: substat_url},
+//         'source-layer': substat_source_layer,
+//         'filter': ['==', 'ML_SUBSTAT', ml_substat],
+//         'layout': {
+//             'visibility': 'visible',
+//             'icon-image': 'black-square-15',
+//             'icon-size':{
+//                  'base': .5,
+//                  'stops': [[12, .75], [13,1.25], [14,1.75], [15,2.25], [16,3.75] ]} }
+//     }); 
+// });
+
+</script>
+</body>
+</html>
