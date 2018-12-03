@@ -24,6 +24,15 @@ Kilgore Substation
 * Feeder 2-2 - [map](/coop/arc_valley/skilgore_f2_2.html)
 * Feeder 2-5 - [map](/coop/arc_valley/skilgore_f2_5.html)
 
+Oak Grove Substation
+---------------
+* Feeder 8-1 - [map](/coop/arc_valley/soak_grove_f8_1.html)
+* Feeder 8-3 - [map](/coop/arc_valley/soak_grove_f8_3.html)
+* Feeder 8-4 - [map](/coop/arc_valley/soak_grove_f8_4.html)
+* Feeder 8-5 - [map](/coop/arc_valley/soak_grove_f8_5.html)
+* Feeder 8-7 - [map](/coop/arc_valley/soak_grove_f8_7.html)
+* Feeder 8-8 - [map](/coop/arc_valley/soak_grove_f8_8.html)
+
 Roland Substation
 --------------
 * Feeder 1-1 - [map](/coop/arc_valley/sroland_f1_1.html)
