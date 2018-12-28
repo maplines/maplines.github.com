@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZmVvbWlrZSIsImEiOiJNRjJrRmRnIn0.Sc8mxXKYTRfgegc_3vjZiw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/feomike/cj0zcunxh000m2sqb2epkabb4',
+    zoom: 9,
+    center: [-95.8,35.6]
+});
+
+var cable_url_0 = 'mapbox://feomike.dnv8ur8l' 
+var cable_source_layer_0 = 'ecoec_span-d7ayyv' 
+
+var cable_url_300 = 'mapbox://feomike.02hm2cy5' 
+var cable_source_layer_300 = 'ecoec_span_300-cf61ad' 
+
+var cable_url_200 = 'mapbox://feomike.132aoaqt' 
+var cable_source_layer_200 = 'ecoec_span_200-b8490g' 
+
+var cable_url_100 = 'mapbox://feomike.9ms82j8a' 
+var cable_source_layer_100 = 'ecoec_span_100-b3o7cv' 
+
+var cable_url_50 = 'mapbox://feomike.bljqv6rq' 
+var cable_source_layer_50 = 'ecoec_span_50-8v8mc7' 
+
+var spanAerial = '#551a8b' //purple
+var spanUnder = '#FFA500'
+
+
+//remember shapefile fields need to be upper case for mapbox to recognize them
+//cable
+map.on('load', function () {
+     map.addLayer({//CABLE
+        'id': 'cable_0',
+        'type': 'line',
+         'source': {
+            type: 'vector', 
+            url: cable_url_100},
+        'source-layer': cable_source_layer_100,
+        //filter: ["all",['==', 'ml_subtype', 1]],
+        'paint': {
+            'line-width': 1,
+            'line-color': {
+                property: 'ml_subtype',
+                type: 'categorical',
+                stops: [ [1,spanAerial],
+                    [2, spanAerial],
+                    [3, spanUnder],
+                    [4, spanUnder]] } }
+    }); 
+});
+
+
+// //Substation - these are squares
+// map.on('load', function () {
+//     map.addLayer({//SUBSTATION
+//         'id': 'substation',
+//         'type': 'symbol',
+//         'source': {
+//             type: 'vector', 
+//             url: substat_url},
+//         'source-layer': substat_source_layer,
+//         'filter': ['==', 'ML_SUBSTAT', ml_substat],
+//         'layout': {
+//             'visibility': 'visible',
+//             'icon-image': 'black-square-15',
+//             'icon-size':{
+//                  'base': .5,
+//                  'stops': [[12, .75], [13,1.25], [14,1.75], [15,2.25], [16,3.75] ]} }
+//     }); 
+// });
+
+</script>
+</body>
+</html>
