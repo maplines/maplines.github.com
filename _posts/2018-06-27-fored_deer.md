@@ -47,7 +47,7 @@ Richwood Substation
 --------------
 * Feeder 05-214 - [map](/coop/forked_deer/srichwood_f05214.html)
 * Feeder 05-234 - [map](/coop/forked_deer/srichwood_f05234.html)
-* Feeder 05-254 - [map](/coop/forked_deer/srichwood_f05254.html)
+* Feeder 05-244 - [map](/coop/forked_deer/srichwood_f05244.html)
 
 Ripley Substation
 --------------
