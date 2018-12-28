@@ -8,9 +8,9 @@ shortdesc: links to feeder maps
 
 Bonicord Substation
 --------------
-* Feeder 06-224 - [map](/coop/forked_deer/scurve_f06224.html)
-* Feeder 06-234 - [map](/coop/forked_deer/scurve_f06234.html)
-* Feeder 06-254 - [map](/coop/forked_deer/scurve_f06254.html)
+* Feeder 06-224 - [map](/coop/forked_deer/sbonicord_f06224.html)
+* Feeder 06-234 - [map](/coop/forked_deer/sbonicord_f06234.html)
+* Feeder 06-254 - [map](/coop/forked_deer/sbonicord_f06254.html)
 
 Curve Substation
 --------------
@@ -40,14 +40,14 @@ Nauvoo Substation
 
 New Bern Substation
 --------------
-* Feeder 04-234 - [map](/coop/forked_deer/snauvoo_f04234.html)
-* Feeder 04-304 - [map](/coop/forked_deer/snauvoo_f04304.html)
+* Feeder 04-234 - [map](/coop/forked_deer/snewbern_f04234.html)
+* Feeder 04-304 - [map](/coop/forked_deer/snewbern_f04304.html)
 
 Richwood Substation
 --------------
-* Feeder 05-214 - [map](/coop/forked_deer/snauvoo_f05214.html)
-* Feeder 05-234 - [map](/coop/forked_deer/snauvoo_f05234.html)
-* Feeder 05-254 - [map](/coop/forked_deer/snauvoo_f05254.html)
+* Feeder 05-214 - [map](/coop/forked_deer/srichwood_f05214.html)
+* Feeder 05-234 - [map](/coop/forked_deer/srichwood_f05234.html)
+* Feeder 05-254 - [map](/coop/forked_deer/srichwood_f05254.html)
 
 Ripley Substation
 --------------
